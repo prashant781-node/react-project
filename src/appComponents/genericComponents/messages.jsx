@@ -4,7 +4,7 @@ class Messages extends Component {
   render() {
     return (
       <li>
-        <a href="" title="" className="not-box-openm">
+        <a href="#" title="" className="not-box-openm">
           <span>
             <img
               src="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/icon6.png"

@@ -4,10 +4,7 @@ class MyFriends extends Component {
   render() {
     return (
       <li>
-        <a
-          href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/my-friend"
-          title=""
-        >
+        <a href="#" title="">
           <span>
             <img
               src="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/icon4.png"
