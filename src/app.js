@@ -11,7 +11,7 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper" style={{ backgroundColor: "rgb(240,240,240)" }}>
         <NavBar user={this.state.user} />
         <MainFrame user={this.state.user} />
         <AddPost user={this.state.user} />
