@@ -6,7 +6,7 @@ class PostSection extends Component {
   renderPosts(user) {
     return user.posts.map((post) => {
       return (
-        <div className="post-bar">
+        <div key={post._id} className="post-bar">
           <PostTopBar postUser={user} />
           <Post post={post} />
         </div>

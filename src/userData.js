@@ -11,6 +11,7 @@ const users = [
       "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/us-pic.png",
     posts: [
       {
+        _id: "1",
         postDescription:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... ",
         postImage:
@@ -35,6 +36,7 @@ const users = [
         ],
       },
       {
+        _id: "2",
         postDescription: "hello how are you ",
         postImage: "",
         postComments: [],
@@ -45,6 +47,7 @@ const users = [
         ],
       },
       {
+        _id: "3",
         postDescription: "hi m fine ",
         postImage:
           "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/ad1.png",
