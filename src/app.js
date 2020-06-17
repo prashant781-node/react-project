@@ -7,7 +7,7 @@ import getUser from "./userData";
 
 class App extends Component {
   state = {
-    user: getUser("1"),
+    user: getUser("123"),
   };
   render() {
     return (
