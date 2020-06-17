@@ -60,25 +60,29 @@ const users = [
         firstName: "abc",
         imgUrl:
           "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon1.png",
-        status: "alive",
+        location: "patiala",
+        alive: true,
       },
       {
         firstName: "xyz",
         imgUrl:
           "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon2.png",
-        status: "alive",
+        location: "noida",
+        alive: false,
       },
       {
         firstName: "efgh",
         imgUrl:
           "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon3.png",
-        status: "dead",
+        location: "noida",
+        alive: false,
       },
       {
         firstName: "yhj",
         imgUrl:
           "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon4.png",
-        status: "death",
+        location: "mumbai",
+        alive: false,
       },
     ],
     nominee: [

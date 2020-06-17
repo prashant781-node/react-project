@@ -1,20 +1,25 @@
 import React, { Component } from "react";
 class FriendProfile extends Component {
   render() {
+    const { friend } = this.props;
     return (
       <div className="col-lg-4 col-md-4 col-sm-6 col-12">
         <div className="company_profile_info">
           <div className="company-up-info my-friends">
-            <img src={this.props.friend.imgUrl} alt="" />
-            <h3>{this.props.friend.firstName}</h3>
+            <img src={friend.imgUrl} alt="" />
+            <h3>{friend.firstName}</h3>
             <h4>
-              <i className="fa fa-map-marker"></i> Noida India
+              <i className="fa fa-map-marker"></i> {friend.location}
             </h4>
             <ul>
               <li>
                 <a href="#" title="" className="follow">
-                  <i className="fa fa-check"></i>{" "}
-                  {this.props.friend.status === "alive" ? "Friend" : "death"}
+                  <i
+                    className={
+                      friend.alive === true ? "fa fa-check" : "fa fa-frown-o"
+                    }
+                  ></i>{" "}
+                  {friend.alive === true ? "Friends" : "Death"}
                 </a>
               </li>
             </ul>

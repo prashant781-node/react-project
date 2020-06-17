@@ -3,7 +3,7 @@ class FriendsLeftBar extends Component {
   state = {};
   aliveFriends() {
     const friendsAlive = this.props.friends.filter(
-      (friend) => friend.status === "alive"
+      (friend) => friend.alive === true
     );
     return friendsAlive.length;
   }
@@ -24,14 +24,14 @@ class FriendsLeftBar extends Component {
           <div className="filter-dd">
             <div className="filter-ttl filter--tt2">
               <a href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/live-friend">
-                Live Friends <span>{this.aliveFriends()}</span>
+                Alive Friends <span>{this.aliveFriends()}</span>
               </a>
             </div>
           </div>
           <div className="filter-dd">
             <div className="filter-ttl filter--tt2">
               <a href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/death-friend">
-                Death Friends{" "}
+                Dead Friends{" "}
                 <span>{this.props.friends.length - this.aliveFriends()}</span>
               </a>
             </div>
