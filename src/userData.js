@@ -58,18 +58,26 @@ const users = [
     friends: [
       {
         firstName: "abc",
+        imgUrl:
+          "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon1.png",
         status: "alive",
       },
       {
         firstName: "xyz",
+        imgUrl:
+          "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon2.png",
         status: "alive",
       },
       {
         firstName: "efgh",
+        imgUrl:
+          "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon3.png",
         status: "dead",
       },
       {
         firstName: "yhj",
+        imgUrl:
+          "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon4.png",
         status: "death",
       },
     ],
