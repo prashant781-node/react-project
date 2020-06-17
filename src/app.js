@@ -1,20 +1,27 @@
 import React, { Component } from "react";
-import NavBar from "./appComponents/navBar";
-import MainFrame from "./appComponents/mainFrame";
-import AddPost from "./appComponents//mainFrameComponents/postComponents/addPost";
-import Footer from "./appComponents/footer";
 import getUser from "./userData";
+import CentralBody from "./appComponents/centralBody";
+import NavBar from "./appComponents/navBar";
+import Footer from "./appComponents/footer";
 
 class App extends Component {
   state = {
     user: getUser("123"),
+    pageDisplayed: "home",
   };
+  handlePageDisplayed = (page) => {
+    this.setState({ pageDisplayed: page });
+  };
+
   render() {
     return (
       <div className="wrapper" style={{ backgroundColor: "rgb(240,240,240)" }}>
-        <NavBar user={this.state.user} />
-        <MainFrame user={this.state.user} />
-        <AddPost user={this.state.user} />
+        <NavBar
+          user={this.state.user}
+          onHomeClick={() => this.handlePageDisplayed("home")}
+          onFriendsClick={() => this.handlePageDisplayed("friends")}
+        />
+        <CentralBody user={this.state.user} page={this.state.pageDisplayed} />
         <Footer />
       </div>
     );

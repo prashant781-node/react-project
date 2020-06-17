@@ -4,7 +4,7 @@ class Home extends Component {
   render() {
     return (
       <li>
-        <a href="" title="">
+        <a href="" title="" onClick={this.props.onClick}>
           <span>
             <img
               src="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/icon1.png"

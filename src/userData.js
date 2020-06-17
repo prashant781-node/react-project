@@ -1,8 +1,8 @@
 const users = [
   {
     _id: "123",
-    userFirstName: "sharad",
-    userLastName: "Garg",
+    userFirstName: "Prashant",
+    userLastName: "kansal",
     profilePic:
       "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/user-pic.png",
     accountSettingsImage:
@@ -58,12 +58,19 @@ const users = [
     friends: [
       {
         firstName: "abc",
+        status: "alive",
       },
       {
         firstName: "xyz",
+        status: "alive",
       },
       {
         firstName: "efgh",
+        status: "dead",
+      },
+      {
+        firstName: "yhj",
+        status: "death",
       },
     ],
     nominee: [

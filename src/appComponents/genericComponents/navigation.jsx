@@ -9,8 +9,8 @@ class Nav extends Component {
     return (
       <nav>
         <ul>
-          <Home />
-          <MyFriends />
+          <Home onClick={this.props.onHomeClick} />
+          <MyFriends onClick={this.props.onFriendsClick} />
           <Messages />
           <Notification />
         </ul>
