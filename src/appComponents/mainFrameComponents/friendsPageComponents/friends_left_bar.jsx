@@ -1,48 +1,28 @@
 import React, { Component } from "react";
+import FriendsLeftBarPagination from "./friends_left_bar_pagination";
 class FriendsLeftBar extends Component {
-  state = {};
-  aliveFriends() {
-    const friendsAlive = this.props.friends.filter(
-      (friend) => friend.alive === true
-    );
-    return friendsAlive.length;
-  }
+  state = {
+    paginations: ["Total Friends", "Alive Friends", "Dead Friends"],
+  };
+
   render() {
     return (
       <div className="col-lg-3 col-md-12">
         <div className="filter-secs">
           <div className="filter-heading">
-            <h3>Manage My Neywork</h3>
+            <h3>Manage My Network</h3>
           </div>
-          <div className="filter-dd ">
-            <div className="filter-ttl filter--tt2">
-              <a href="#" onClick={() => this.props.onClickPagination("total")}>
-                Total Friends <span>{this.props.friends.length}</span>
-              </a>
-            </div>
-          </div>
-          <div className="filter-dd">
-            <div className="filter-ttl filter--tt2">
-              <a href="#" onClick={() => this.props.onClickPagination("alive")}>
-                Alive Friends <span>{this.aliveFriends()}</span>
-              </a>
-            </div>
-          </div>
-          <div className="filter-dd">
-            <div className="filter-ttl filter--tt2">
-              <a href="#" onClick={() => this.props.onClickPagination("dead")}>
-                Dead Friends{" "}
-                <span>{this.props.friends.length - this.aliveFriends()}</span>
-              </a>
-            </div>
-          </div>
-          <div className="filter-dd">
-            <div className="filter-ttl filter--tt2">
-              <a href="#">
-                Pending Request <span>8</span>
-              </a>
-            </div>
-          </div>
+          {this.state.paginations.map((pagination) => (
+            <FriendsLeftBarPagination
+              key={pagination}
+              onClickPagination={(pagination_rec) =>
+                this.props.onClickPagination(pagination_rec)
+              }
+              pagination={pagination}
+              friends={this.props.friends}
+              display={this.props.display}
+            />
+          ))}
         </div>
       </div>
     );

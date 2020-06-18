@@ -11,7 +11,7 @@ class FriendsWsSec extends Component {
         <div className="card">
           <FriendsWsSecTopBar
             length={this.props.friends.length}
-            display={`${this.props.display} Friends`}
+            display={`${this.props.display}`}
           />
           <FriendsSearhBar />
           <div className="companies-list friends-listdesign">

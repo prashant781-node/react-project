@@ -3,16 +3,16 @@ import FriendsLeftBar from "./friends_left_bar";
 import FriendsWsSec from "./friends_ws_sec";
 class FriendsMainFrame extends Component {
   state = {
-    display: "total",
+    display: "Total friends",
   };
   friendsToDisplay() {
-    if (this.state.display === "alive") {
+    if (this.state.display === "Alive Friends") {
       const aliveFriends = this.props.friends.filter(
         (friend) => friend.alive === true
       );
       return aliveFriends;
     }
-    if (this.state.display === "dead") {
+    if (this.state.display === "Dead Friends") {
       const deadFriends = this.props.friends.filter(
         (friend) => friend.alive === false
       );
@@ -33,6 +33,7 @@ class FriendsMainFrame extends Component {
               <FriendsLeftBar
                 onClickPagination={(display) => this.changeDisplay(display)}
                 friends={this.props.friends}
+                display={this.state.display}
               />
               <FriendsWsSec
                 display={this.state.display}
