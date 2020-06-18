@@ -3,7 +3,7 @@ import FriendsLeftBar from "./friends_left_bar";
 import FriendsWsSec from "./friends_ws_sec";
 class FriendsMainFrame extends Component {
   state = {
-    display: "Total friends",
+    display: "Total Friends",
   };
   friendsToDisplay() {
     if (this.state.display === "Alive Friends") {
