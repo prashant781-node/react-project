@@ -14,23 +14,23 @@ class FriendsLeftBar extends Component {
           <div className="filter-heading">
             <h3>Manage My Neywork</h3>
           </div>
-          <div className="filter-dd active">
+          <div className="filter-dd ">
             <div className="filter-ttl filter--tt2">
-              <a href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/my-friend">
+              <a href="#" onClick={() => this.props.onClickPagination("total")}>
                 Total Friends <span>{this.props.friends.length}</span>
               </a>
             </div>
           </div>
           <div className="filter-dd">
             <div className="filter-ttl filter--tt2">
-              <a href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/live-friend">
+              <a href="#" onClick={() => this.props.onClickPagination("alive")}>
                 Alive Friends <span>{this.aliveFriends()}</span>
               </a>
             </div>
           </div>
           <div className="filter-dd">
             <div className="filter-ttl filter--tt2">
-              <a href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/death-friend">
+              <a href="#" onClick={() => this.props.onClickPagination("dead")}>
                 Dead Friends{" "}
                 <span>{this.props.friends.length - this.aliveFriends()}</span>
               </a>
@@ -38,7 +38,7 @@ class FriendsLeftBar extends Component {
           </div>
           <div className="filter-dd">
             <div className="filter-ttl filter--tt2">
-              <a href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/pending-friend-request">
+              <a href="#">
                 Pending Request <span>8</span>
               </a>
             </div>

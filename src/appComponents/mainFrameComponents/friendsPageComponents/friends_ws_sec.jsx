@@ -1,35 +1,23 @@
 import React, { Component } from "react";
 import FriendProfile from "./friend_profile";
+import FriendsWsSecTopBar from "./friends_ws_sec_topbar";
+import FriendsSearhBar from "../../genericComponents/friendsSearchBar";
+
 class FriendsWsSec extends Component {
   state = {};
   render() {
     return (
       <div className="col-lg-9 col-md-12">
         <div className="card">
-          <div className="sd-title">
-            <h3>
-              All Friends{" "}
-              <span className="pull-right">{this.props.friends.length}</span>
-            </h3>
-          </div>
-          <div className="search-sec">
-            <div className="container">
-              <div className="search-box">
-                <form>
-                  <input
-                    type="text"
-                    name="search"
-                    placeholder="Search keywords"
-                  />
-                  <button type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </div>
+          <FriendsWsSecTopBar
+            length={this.props.friends.length}
+            display={`${this.props.display} Friends`}
+          />
+          <FriendsSearhBar />
           <div className="companies-list friends-listdesign">
             <div className="row">
               {this.props.friends.map((friend) => (
-                <FriendProfile friend={friend} />
+                <FriendProfile key={friend._id} friend={friend} />
               ))}
             </div>
           </div>
