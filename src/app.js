@@ -10,6 +10,7 @@ class App extends Component {
     pageDisplayed: "home",
   };
   handlePageDisplayed = (page) => {
+    console.log(page);
     this.setState({ pageDisplayed: page });
   };
 
@@ -22,7 +23,11 @@ class App extends Component {
           onFriendsClick={() => this.handlePageDisplayed("friends")}
           onClickNominee={() => this.handlePageDisplayed("nominee")}
         />
-        <CentralBody user={this.state.user} page={this.state.pageDisplayed} />
+        <CentralBody
+          user={this.state.user}
+          page={this.state.pageDisplayed}
+          onClickAddNominee={() => this.handlePageDisplayed("addNominee")}
+        />
         <Footer />
       </div>
     );

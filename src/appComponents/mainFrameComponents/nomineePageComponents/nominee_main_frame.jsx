@@ -16,7 +16,7 @@ class NomineeMainFrame extends Component {
                 {this.props.nominees.map((nominee) => (
                   <Nominee nominee={nominee} />
                 ))}
-                <AddNominee />
+                <AddNominee onClickAddNominee={this.props.onClickAddNominee} />
               </div>
             </div>
           </div>

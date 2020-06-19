@@ -11,7 +11,7 @@ class AddNominee extends Component {
               alt=""
             />
             <h3>
-              <a href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/add-nominee">
+              <a href="#" onClick={this.props.onClickAddNominee}>
                 Add Nominee
               </a>
             </h3>
