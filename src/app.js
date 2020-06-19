@@ -22,6 +22,7 @@ class App extends Component {
           onHomeClick={() => this.handlePageDisplayed("home")}
           onFriendsClick={() => this.handlePageDisplayed("friends")}
           onClickNominee={() => this.handlePageDisplayed("nominee")}
+          onClickMyProfile={() => this.handlePageDisplayed("myProfile")}
         />
         <CentralBody
           user={this.state.user}

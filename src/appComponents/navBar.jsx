@@ -21,6 +21,7 @@ class NavBar extends Component {
             <UsrAccount
               user={this.props.user}
               onClickNominee={this.props.onClickNominee}
+              onClickMyProfile={this.props.onClickMyProfile}
             />
           </div>
         </div>

@@ -6,10 +6,7 @@ class AccountSettings extends Component {
       <div className="user-account-settingss" id="users">
         <ul className="us-links">
           <li>
-            <a
-              href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/my-profile"
-              title=""
-            >
+            <a href="#" onClick={this.props.onClickMyProfile} title="">
               My Profile
             </a>
           </li>

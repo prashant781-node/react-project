@@ -4,9 +4,12 @@ import MainFrame from "./mainFrameComponents/homePageComponents./home_main_Frame
 import AddPost from "./mainFrameComponents/postComponents/addPost";
 import NomineeMainFrame from "./mainFrameComponents/nomineePageComponents/nominee_main_frame";
 import AddNomineeForm from "./mainFrameComponents/nomineePageComponents/addNomineeForm";
+import ProfileMainFrame from "./mainFrameComponents/profilePageComponents/profileMainFrame";
 class CentralBody extends Component {
   state = {};
   render() {
+    if (this.props.page === "myProfile")
+      return <ProfileMainFrame user={this.props.user} />;
     if (this.props.page === "friends")
       return <FriendsMainFrame friends={this.props.user.friends} />;
     if (this.props.page === "nominee")

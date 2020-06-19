@@ -9,6 +9,8 @@ const users = [
       "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/user.png",
     postTopBarImage:
       "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/us-pic.png",
+    coverImgUrl:
+      "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/user_cover-img.png",
     posts: [
       {
         _id: "1",
@@ -91,12 +93,16 @@ const users = [
         firstName: "abc",
         imgUrl:
           "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon2.png",
+        dateOfBirth: "21-02-1992",
+        email_Id: "kansal.781@gmail.com",
       },
       {
         _id: 2,
         firstName: "xyz",
         imgUrl:
           "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon1.png",
+        dateOfBirth: "21-02-1992",
+        email_Id: "kansal.781@gmail.com",
       },
     ],
   },
