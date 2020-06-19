@@ -85,12 +85,18 @@ const users = [
         alive: false,
       },
     ],
-    nominee: [
+    nominees: [
       {
+        _id: 1,
         firstName: "abc",
+        imgUrl:
+          "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon2.png",
       },
       {
+        _id: 2,
         firstName: "xyz",
+        imgUrl:
+          "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/pf-icon1.png",
       },
     ],
   },

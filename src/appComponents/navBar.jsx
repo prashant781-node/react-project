@@ -18,7 +18,10 @@ class NavBar extends Component {
               onFriendsClick={this.props.onFriendsClick}
             />
             <MenuBtn />
-            <UsrAccount user={this.props.user} />
+            <UsrAccount
+              user={this.props.user}
+              onClickNominee={this.props.onClickNominee}
+            />
           </div>
         </div>
       </header>

@@ -20,6 +20,7 @@ class App extends Component {
           user={this.state.user}
           onHomeClick={() => this.handlePageDisplayed("home")}
           onFriendsClick={() => this.handlePageDisplayed("friends")}
+          onClickNominee={() => this.handlePageDisplayed("nominee")}
         />
         <CentralBody user={this.state.user} page={this.state.pageDisplayed} />
         <Footer />

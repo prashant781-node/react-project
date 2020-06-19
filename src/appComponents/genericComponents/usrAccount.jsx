@@ -13,7 +13,7 @@ class UsrAccount extends Component {
 
           <i className="la la-sort-down"></i>
         </div>
-        <AccountSettings />
+        <AccountSettings onClickNominee={this.props.onClickNominee} />
       </div>
     );
   }

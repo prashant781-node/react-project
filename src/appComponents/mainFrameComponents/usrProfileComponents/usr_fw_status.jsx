@@ -13,7 +13,9 @@ class UsrFwStatus extends Component {
         <li>
           <h4>
             Nominee{" "}
-            <span className="puli-right">{this.props.user.nominee.length}</span>
+            <span className="puli-right">
+              {this.props.user.nominees.length}
+            </span>
           </h4>
         </li>
         <li>
