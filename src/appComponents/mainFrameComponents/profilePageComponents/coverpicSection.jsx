@@ -3,12 +3,12 @@ class CoverPicSection extends Component {
   state = {};
   render() {
     return (
-      <section class="cover-sec">
+      <section className="cover-sec">
         <img src={this.props.coverImgUrl} alt="" />
-        <div class="add-pic-box">
-          <div class="container">
-            <div class="row no-gutters">
-              <div class="col-lg-12 col-sm-12">
+        <div className="add-pic-box">
+          <div className="container">
+            <div className="row no-gutters">
+              <div className="col-lg-12 col-sm-12">
                 <input type="file" id="file" />
                 <label for="file">Change Background</label>
               </div>

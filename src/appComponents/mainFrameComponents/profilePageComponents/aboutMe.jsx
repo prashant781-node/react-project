@@ -11,28 +11,28 @@ class AboutMe extends Component {
       address,
     } = this.props.user;
     return (
-      <div class="suggestions full-width bt-1">
-        <div class="sd-title">
+      <div className="suggestions full-width bt-1">
+        <div className="sd-title">
           <h3>About Me</h3>
         </div>
-        <ul class="social_links about-friend">
+        <ul className="social_links about-friend">
           <li>
-            <i class="fa fa-user"></i> {gender}
+            <i className="fa fa-user"></i> {gender}
           </li>
           <li>
-            <i class="fa fa-calendar"></i> {dateOfBirth}
+            <i className="fa fa-calendar"></i> {dateOfBirth}
           </li>
           <li>
-            <i class="fa fa-envelope"></i> {email_Id}
+            <i className="fa fa-envelope"></i> {email_Id}
           </li>
           <li>
-            <i class="fa fa-mobile"></i> {phone_No}
+            <i className="fa fa-mobile"></i> {phone_No}
           </li>
           <li>
-            <i class="fa fa-building"></i> {location}
+            <i className="fa fa-building"></i> {location}
           </li>
           <li>
-            <i class="fa fa-home"></i> {`${address} ${location}`}
+            <i className="fa fa-home"></i> {`${address} ${location}`}
           </li>
         </ul>
       </div>

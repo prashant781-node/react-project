@@ -14,7 +14,7 @@ class NomineeMainFrame extends Component {
             <div className="companies-list friends-listdesign">
               <div className="row">
                 {this.props.nominees.map((nominee) => (
-                  <Nominee nominee={nominee} />
+                  <Nominee key={nominee} nominee={nominee} />
                 ))}
                 <AddNominee onClickAddNominee={this.props.onClickAddNominee} />
               </div>

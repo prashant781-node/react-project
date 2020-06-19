@@ -6,7 +6,7 @@ const users = [
     dateOfBirth: "21 - 02 - 1992",
     gender: "male",
     location: "noida india",
-    email_Id: "sharad@gmail.com",
+    email_Id: "kansal.781@gmail.com",
     phone_No: "+91 7878 7667 56",
     address: "AD/12",
     profileImgUrl:
