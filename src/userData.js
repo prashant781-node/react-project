@@ -3,6 +3,14 @@ const users = [
     _id: "123",
     userFirstName: "Prashant",
     userLastName: "kansal",
+    dateOfBirth: "21 - 02 - 1992",
+    gender: "male",
+    location: "noida india",
+    email_Id: "sharad@gmail.com",
+    phone_No: "+91 7878 7667 56",
+    address: "AD/12",
+    profileImgUrl:
+      "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/user-pro-img.png",
     profilePic:
       "http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/common/images/resources/user-pic.png",
     accountSettingsImage:

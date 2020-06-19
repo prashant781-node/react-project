@@ -10,7 +10,6 @@ class App extends Component {
     pageDisplayed: "home",
   };
   handlePageDisplayed = (page) => {
-    console.log(page);
     this.setState({ pageDisplayed: page });
   };
 
