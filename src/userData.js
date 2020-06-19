@@ -1,8 +1,8 @@
 const users = [
   {
     _id: "123",
-    userFirstName: "Prashant",
-    userLastName: "kansal",
+    userFirstName: "Sharad",
+    userLastName: "Garg",
     dateOfBirth: "21 - 02 - 1992",
     gender: "male",
     location: "noida india",

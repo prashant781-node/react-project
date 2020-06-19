@@ -16,59 +16,38 @@ class AccountSettings extends Component {
             </a>
           </li>
           <li>
-            <a
-              href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/scheduled-posts"
-              title=""
-            >
+            <a href="#" title="">
               Scheduled Posts
             </a>
           </li>
           <li>
-            <a
-              href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/scheduled-messege"
-              title=""
-            >
+            <a href="#" title="">
               Scheduled Messege
             </a>
           </li>
           <li>
-            <a
-              href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/death-report"
-              title=""
-            >
+            <a href="#" title="">
               Report Death
             </a>
           </li>
           <li>
-            <a
-              href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/help-and-support"
-              title=""
-            >
+            <a href="#" title="">
               Help & Support
             </a>
           </li>
           <li>
-            <a
-              href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/refer-and-earn"
-              title=""
-            >
+            <a href="#" title="">
               Refer and Earn
             </a>
           </li>
           <li>
-            <a
-              href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/user-privacy"
-              title=""
-            >
+            <a href="#" title="">
               Privacy
             </a>
           </li>
         </ul>
         <h3 className="tc">
-          <a
-            href="http://goinstablog.com/goinstablog.com/sumitdesign/design/liveon.com/"
-            title=""
-          >
+          <a href="#" title="">
             Logout
           </a>
         </h3>
